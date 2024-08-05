@@ -1,0 +1,60 @@
+body{
+    background-color: #333;
+}
+.header{
+    background-color: #333;
+    color: white;
+}
+.header-text{
+    padding:10px;
+    margin-left:14px;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.editor {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-right:2px solid black;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+}
+
+.code-editor {
+    flex-grow: 1;
+    font-family: monospace;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.preview {
+    width: 50%;
+    background-color: white;
+}
+
+#previewFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .editor, .preview {
+        width: 100%;
+        height: 50vh;
+    }
+}
